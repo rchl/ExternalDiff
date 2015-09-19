@@ -1,0 +1,8 @@
+{
+  "cmd": ["p4merge", "$file1", "$file2"],
+
+  // Platform specific overrides ('mac', 'win', 'linux').
+  "mac": {
+    "cmd": ["open", "-a", "p4merge.app", "--args", "$file1", "$file2"]
+  }
+}
