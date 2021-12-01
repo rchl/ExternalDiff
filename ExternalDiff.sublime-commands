@@ -1,3 +1,14 @@
 [
-  { "command": "external_diff", "caption": "External Diff" }
+  {
+    "command": "external_diff",
+    "caption": "External Diff"
+  },
+  {
+    "caption": "Preferences: External Diff Settings",
+    "command": "edit_settings",
+    "args": {
+      "base_file": "${packages}/ExternalDiff/ExternalDiff.sublime-settings",
+      "default": "// Settings in here override those in \"ExternalDiff/ExternalDiff.sublime-settings\"\n{\n\t$0\n}\n"
+    }
+  }
 ]

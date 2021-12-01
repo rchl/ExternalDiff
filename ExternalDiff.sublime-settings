@@ -1,8 +1,8 @@
 {
-  "cmd": ["p4merge", "$file1", "$file2"],
+  "cmd": ["smerge", "mergetool", "--no-wait", "$left_file", "$left_file", "$right_file"],
 
   // Platform specific overrides ('mac', 'win', 'linux').
   "mac": {
-    "cmd": ["open", "-a", "p4merge.app", "--args", "$file1", "$file2"]
+    // "cmd": ["open", "-a", "p4merge.app", "--args", "$left_file", "$right_file"]
   }
 }
